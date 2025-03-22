@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import { IconSvgProps } from "@/types";
 
-export const Logo: React.FC<IconSvgProps> = ({ size = 124 }) => {
+export const Logo: React.FC<IconSvgProps> = ({ size = 150 }) => {
   const { theme } = useTheme();
 
   return (
