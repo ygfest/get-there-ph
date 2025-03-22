@@ -11,13 +11,13 @@ export default function TypewriterAnimation() {
           "How to go to Prosperna",
           "How to go to BGC from Prosperna",
           "How to get to Festival Mall from here",
-          "AYUKU NaaaAAAAaaaaaaAAAAAa",
+          "Gutom na AKooOOOOOoOoooOO",
         ],
         autoStart: true,
         loop: true,
-        delay: 50, // Typing speed
-        deleteSpeed: 30, // Deleting speed
-        cursor: "|", // Cursor style
+        delay: 50,
+        deleteSpeed: 30,
+        cursor: "|",
       }}
     />
   );

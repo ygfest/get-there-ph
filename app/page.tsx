@@ -1,12 +1,10 @@
 import { Link } from "@heroui/link";
 import { Snippet } from "@heroui/snippet";
-import { Code } from "@heroui/code";
 import { button as buttonStyles } from "@heroui/theme";
-
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon, InstagramIcon, LocationIcon } from "@/components/icons";
-import TypewriterAnimation from "@/components/type-writer-animation"; // Import the animation component
+import TypewriterAnimation from "@/components/type-writer-animation";
+import { InstagramIcon } from "@/components/icons";
 
 export default function Home() {
   return (
@@ -26,13 +24,12 @@ export default function Home() {
 
       <div className="flex gap-3">
         <Link
-          isExternal
           className={buttonStyles({
             color: "primary",
             radius: "full",
             variant: "shadow",
           })}
-          href={siteConfig.links.instagram}
+          href={siteConfig.navItems[0].href}
         >
           Get Started
         </Link>
@@ -51,16 +48,12 @@ export default function Home() {
           hideCopyButton
           hideSymbol
           variant="bordered"
-          className="w-[600px] relative"
+          className="relative"
         >
           <span className="flex items-center">
-            <span className="text-violet-500 font-medium text-3xl">
+            <span className="text-violet-500 font-medium">
               <TypewriterAnimation />
             </span>
-            <LocationIcon
-              className="absolute right-3 text-default-400"
-              size={20}
-            />
           </span>
         </Snippet>
       </div>
